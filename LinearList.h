@@ -3,7 +3,17 @@
 #include <fstream>
 using namespace std;
 
-
+//线性表抽象类
+//成员函数：
+	//virtual ~linearList() 
+	//virtual bool empty()const 当线性表为空时返回true
+	//virtual int size()const 返回线性表元素个数
+	//virtual T& get(int theIndex) 返回索引为theIndex的元素
+	//virtual int indexOf(const T& theElement) const 返回元素theElement第一次出现的索引
+	//virtual void erase(int theIndex) 删除索引为theIndex的元素
+	//virtual void insert(int theIndex, const T& theElement) 把元素theElement插入索引为theIndex的地方
+	//void changeLength1D(T*& a, int oldlength, int newlength);
+	//virtual void ShowMessage() ;
 template<class T>
 class linearList
 {

@@ -3,7 +3,7 @@
 #include<string>
 using namespace std;
 
-//链表节点类
+//单链表节点类
 template<class T>
 class chainNode
 {
@@ -17,5 +17,11 @@ public:
 	{
 		this->element = element;
 		this->next = next;
+	}
+	~chainNode()
+	{
+		//cout << "chainNode析构函数调用" << endl;
+		delete next;
+		next = NULL;
 	}
 };
