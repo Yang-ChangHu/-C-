@@ -44,5 +44,20 @@
     <ClInclude Include="stack.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="queue.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="symbolchainNode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="symbolTable.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="treeNode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="binaryTree.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

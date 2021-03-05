@@ -8,6 +8,9 @@
 #include"TowWayLinkList.hpp"
 #include"stack.hpp"
 #include<sstream>
+#include"queue.hpp"
+#include"symbolTable.hpp"
+#include"binaryTree.hpp"
 using namespace std;
 
 
@@ -307,9 +310,45 @@ void test07()		//逆波兰表达式
 	 cout<<((s.getHead())->element);
 
 }
+
+void test08()		//队列测试
+{
+	Queue<Person> q;
+	q.enqueue(p1);
+	q.enqueue(p2);
+	q.enqueue(p3);
+	q.enqueue(p4);
+	q.showMessage();
+	q.dequeue();
+	q.showMessage();
+}
+
+void test09()//符号表测试
+{
+	symbolTable<int, int> st;
+	//st.rankput(0, 0);
+	//st.rankput(1, 1);
+	
+	st.rankput(3, 3);
+	st.showMessage();
+
+	st.rankput(2, 2);
+	//st.mydelete(3);
+	st.showMessage();
+}
+
+
+void test10()	//测试二叉树
+{
+	binaryTree<int, int> bt;
+	bt.put(1, 1);
+	bt.put(3, 3);
+	bt.put(4, 4);
+	bt.put(2, 2);
+}
 int main()
 {
-	test07();
+	test10();
 	system("pause");
 	return 0;
 }

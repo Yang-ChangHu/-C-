@@ -143,13 +143,18 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="arrayList.hpp" />
+    <ClInclude Include="binaryTree.hpp" />
     <ClInclude Include="chain.hpp" />
     <ClInclude Include="chainNode.h" />
     <ClInclude Include="LinearList.h" />
     <ClInclude Include="myclass.h" />
     <ClInclude Include="Node.h" />
+    <ClInclude Include="queue.hpp" />
     <ClInclude Include="stack.hpp" />
+    <ClInclude Include="symbolchainNode.h" />
+    <ClInclude Include="symbolTable.hpp" />
     <ClInclude Include="TowWayLinkList.hpp" />
+    <ClInclude Include="treeNode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
