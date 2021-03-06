@@ -88,10 +88,12 @@ void Queue<T>::showMessage() const
 	while (curNode != (this->last))
 	{
 		cout << "\t当前第"<<i<<"\t个元素是："<<curNode->element;
+		cout << endl;
 		curNode = curNode->next;
 		i++;
 	}
-	cout << "最后一个元素是：" << (this->last->element);
+	cout << "\t最后一个元素是：" << (this->last->element);
+	cout << endl;
 	return;
 }
 

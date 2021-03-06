@@ -341,11 +341,38 @@ void test09()//·ûºÅ±í²âÊÔ
 void test10()	//²âÊÔ¶ş²æÊ÷
 {
 	binaryTree<int, int> bt;
-	bt.put(1, 1);
-	bt.put(3, 3);
-	bt.put(4, 4);
-	bt.put(2, 2);
+	bt.put(6, 11);
+	bt.put(4, 33);
+	bt.put(8, 44);
+	bt.put(5, 22);
+	bt.put(3, 22);
+	bt.put(7, 22);
+
+	//cout << bt.get(2) << endl;
+	Queue<int> keypre = bt.preErgodic();
+	keypre.showMessage();
+
+
+	Queue<int> keymid = bt.midErgodic();
+	keymid.showMessage();
+
+	Queue<int> keyafter = bt.afterErgodic();
+	keyafter.showMessage();
+
+	Queue<int> keylayer=bt.layerErgodic();
+	keylayer.showMessage();
+
+
+	cout << bt.maxDepth() << endl;
+	//bt.mydelete(1);
+	//bt.mydelete(4);
+	//bt.mydelete(3);
+	//bt.mydelete(2);
+	//bt.min();
+	//bt.max();
+
 }
+
 int main()
 {
 	test10();
