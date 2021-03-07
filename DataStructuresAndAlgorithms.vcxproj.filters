@@ -59,5 +59,11 @@
     <ClInclude Include="binaryTree.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="pageFolding.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="heap.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

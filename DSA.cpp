@@ -11,6 +11,8 @@
 #include"queue.hpp"
 #include"symbolTable.hpp"
 #include"binaryTree.hpp"
+#include"pageFolding.hpp"
+#include"heap.hpp"
 using namespace std;
 
 
@@ -62,6 +64,7 @@ void test01()
 	cout<<p.indexOf(p2);
 
 }
+
 void test02()		//反转单链表
 {
 
@@ -86,10 +89,6 @@ void test02()		//反转单链表
 	
 }
 
-
-
-
-
 void test03()   //测试双向链表
 {
 	TowWayLinkList<Person> p;
@@ -106,7 +105,6 @@ void test03()   //测试双向链表
 	p.remove(4);
 	p.showMessage();
 }
-
 
 void test04()		//快慢指针
 {
@@ -134,7 +132,6 @@ void test04()		//快慢指针
 	return;
 
 }
-
 
 void test05()		//约瑟夫问题
 {
@@ -189,7 +186,6 @@ void test05()		//约瑟夫问题
 	}
 	cout << n->element << endl;
 }
-
 
 void test06()		//测试栈
 {
@@ -373,9 +369,35 @@ void test10()	//测试二叉树
 
 }
 
+
+void test11()	//测试折纸
+{
+	pageFolding pf(1);
+	pf.ShowTree(pf.root);
+}
+
+
+void test12()		//测试堆
+{
+	Heap<char> h(10);
+	h.insert('A');
+	h.insert('B');
+	h.insert('C');
+	h.insert('D');
+	h.insert('E');
+	h.insert('F');
+	h.insert('G');
+
+	while (h.getSize()>0)
+	{
+		cout << "\t第一个删除的元素是：" << h.deleMax() << endl;
+	}
+	
+}
+
 int main()
 {
-	test10();
+	test12();
 	system("pause");
 	return 0;
 }
