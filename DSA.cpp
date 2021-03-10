@@ -13,6 +13,17 @@
 #include"binaryTree.hpp"
 #include"pageFolding.hpp"
 #include"heap.hpp"
+#include"MaxPriorityQueue.hpp"
+#include"minPriorityQueue.hpp"
+#include"colorNode.hpp"
+#include"RedBlackTree.hpp"
+#include"UF.h"
+#include"UFtree.h"
+#include"UFtreeWeight.h"
+#include<queue>
+#include"DepthFirstSearch.h"
+#include"Graph.h"
+
 using namespace std;
 
 
@@ -390,14 +401,137 @@ void test12()		//测试堆
 
 	while (h.getSize()>0)
 	{
-		cout << "\t第一个删除的元素是：" << h.deleMax() << endl;
+		cout << "\t删除的元素是：" << h.deleMax() << endl;
 	}
-	
+	//h.ShowMessage();
+	cout << h.deleMax() << endl;
 }
+
+void test13()//测试堆排序
+{
+	char A[] = { 'A','B','C','D','E','F','G' };
+	Heap<char> h(A, sizeof(A) / sizeof(A[0]), sizeof(A) / sizeof(A[0])+1);
+	h.ShowMessage();
+
+
+}
+
+void test14()		//测试最大优先队列
+{
+	MaxPriorityQueue<char> mq(10);
+	mq.insert('A');
+	mq.insert('B');
+	mq.insert('C');
+	mq.insert('D');
+	mq.insert('E');
+	mq.insert('F');
+	mq.insert('G');
+
+	while (!mq.isEmpty())
+	{
+		cout << mq.delMax()<< endl;
+	}
+
+}
+
+void test15()		//测试最小优先队列
+{
+	minPriorityQueue<int> mq(15);
+	mq.insert(2);
+	mq.insert(5);
+	mq.insert(7);
+	mq.insert(3);
+	mq.insert(4);
+	mq.insert(6);
+	mq.insert(1);
+	mq.insert(9);
+	while (!mq.isEmpty())
+	{
+		cout << mq.delMin() << endl;
+	}
+}
+
+void test16()		//测试红黑树
+{
+	RedBlackTree<int, string> rbt;
+	rbt.put(1, "张三");
+	rbt.put(2, "李四");
+	rbt.put(3, "王五");
+	//rbt.put(4, "张三");
+
+	cout << rbt.get(4) << endl;
+
+
+}
+
+void test17()
+{
+	UF uf(5);
+	int a = 2;
+	int b = 3;
+	uf.myunion(2, 3);
+	cout << uf.count() << endl;
+}
+
+void test18()	//	测试uftree
+{
+	UFtree uft(8);
+	int a = 2;
+	int b = 3;
+	uft.myunion(2, 3);
+	cout << uft.count() << endl;
+}
+
+void test19()	//	测试uftree
+{
+	UFtreeWeight uft(20);
+	//int a = 2;
+	//int b = 3;
+	uft.myunion(0, 1);
+	uft.myunion(6, 9);
+	uft.myunion(3, 8);
+	uft.myunion(5, 11);
+	uft.myunion(2, 12);
+	uft.myunion(6, 10);
+	uft.myunion(4, 8);
+	cout << uft.count() << endl;
+	uft.showMessage(20);
+}
+
+
+void test20()	//测试图
+{
+	Graph g(13);
+	g.addEdge(0, 1);
+	g.addEdge(0, 2);
+	g.addEdge(0, 5);
+	g.addEdge(0, 6);
+	g.addEdge(3, 5);
+	g.addEdge(3, 4);
+	g.addEdge(5, 4);
+	g.addEdge(6, 4);
+
+	g.addEdge(7, 8);
+
+	g.addEdge(9, 10);
+	g.addEdge(9, 12);
+	g.addEdge(11,12);
+	g.addEdge(9, 11);
+
+	//g.ShowMessage();
+
+	DepthFirstSearch Dfs(g, 0);
+	cout << Dfs.Count() << endl;
+	cout << Dfs.Marked(3) << endl;
+	cout << Dfs.Marked(10) << endl;
+
+}
+
+
 
 int main()
 {
-	test12();
+	test20();
 	system("pause");
 	return 0;
 }

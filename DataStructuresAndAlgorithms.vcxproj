@@ -139,24 +139,40 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DepthFirstSearch.cpp" />
     <ClCompile Include="DSA.cpp" />
+    <ClCompile Include="Graph.cpp" />
+    <ClCompile Include="UF.cpp" />
+    <ClCompile Include="UFtree.cpp" />
+    <ClCompile Include="UFtreeWeight.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="arrayList.hpp" />
     <ClInclude Include="binaryTree.hpp" />
+    <ClInclude Include="BreadthFirstSearch.h" />
     <ClInclude Include="chain.hpp" />
     <ClInclude Include="chainNode.h" />
+    <ClInclude Include="colorNode.hpp" />
+    <ClInclude Include="DepthFirstSearch.h" />
+    <ClInclude Include="Graph.h" />
     <ClInclude Include="heap.hpp" />
+    <ClInclude Include="indexMinPriorityQueue.hpp" />
     <ClInclude Include="LinearList.h" />
+    <ClInclude Include="MaxPriorityQueue.hpp" />
+    <ClInclude Include="minPriorityQueue.hpp" />
     <ClInclude Include="myclass.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="pageFolding.hpp" />
     <ClInclude Include="queue.hpp" />
+    <ClInclude Include="RedBlackTree.hpp" />
     <ClInclude Include="stack.hpp" />
     <ClInclude Include="symbolchainNode.h" />
     <ClInclude Include="symbolTable.hpp" />
     <ClInclude Include="TowWayLinkList.hpp" />
     <ClInclude Include="treeNode.h" />
+    <ClInclude Include="UF.h" />
+    <ClInclude Include="UFtree.h" />
+    <ClInclude Include="UFtreeWeight.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

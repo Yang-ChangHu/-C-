@@ -18,6 +18,21 @@
     <ClCompile Include="DSA.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="UF.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UFtree.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UFtreeWeight.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DepthFirstSearch.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="arrayList.hpp">
@@ -63,6 +78,39 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="heap.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MaxPriorityQueue.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="minPriorityQueue.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="indexMinPriorityQueue.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RedBlackTree.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="colorNode.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UF.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UFtree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UFtreeWeight.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthFirstSearch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BreadthFirstSearch.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
