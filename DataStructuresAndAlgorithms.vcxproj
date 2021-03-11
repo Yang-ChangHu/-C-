@@ -142,6 +142,8 @@
     <ClCompile Include="BreadFirstSearch.cpp" />
     <ClCompile Include="DepthFirstPaths.cpp" />
     <ClCompile Include="DepthFirstSearch.cpp" />
+    <ClCompile Include="Digraph.cpp" />
+    <ClCompile Include="DirectedCycle.cpp" />
     <ClCompile Include="DSA.cpp" />
     <ClCompile Include="Graph.cpp" />
     <ClCompile Include="myclass.cpp" />
@@ -158,6 +160,8 @@
     <ClInclude Include="colorNode.hpp" />
     <ClInclude Include="DepthFirstPaths.h" />
     <ClInclude Include="DepthFirstSearch.h" />
+    <ClInclude Include="Digraph.h" />
+    <ClInclude Include="DirectedCycle.h" />
     <ClInclude Include="Graph.h" />
     <ClInclude Include="heap.hpp" />
     <ClInclude Include="indexMinPriorityQueue.hpp" />

@@ -12,6 +12,7 @@ class Queue
 {
 public:
 	Queue();
+	Queue(const Queue& q);
 	bool isEmpty() const;
 	int size() const;
 	T dequeue();
@@ -85,7 +86,7 @@ void Queue<T>::showMessage() const
 		return;
 	}
 	cout << "\t当前共有" << (this->N) << "\t个元素" << endl;
-	while (curNode != (this->last))
+	while (curNode != (this->last)  && curNode!=NULL)
 	{
 		cout << "\t当前第"<<i<<"\t个元素是："<<curNode->element;
 		cout << endl;
@@ -97,3 +98,11 @@ void Queue<T>::showMessage() const
 	return;
 }
 
+
+template<class T>
+Queue<T>::Queue(const Queue& q)
+{
+	head = new chainNode<T>(*(q.head));
+	last = new chainNode<T>(*(q.last));
+	N = q.N;
+}

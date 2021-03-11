@@ -27,6 +27,8 @@
 #include"Graph.h"
 #include"BreadthFirstSearch.h"
 #include"DepthFirstPaths.h"
+#include"Digraph.h"
+#include"DirectedCycle.h"
 
 
 using namespace std;
@@ -551,9 +553,46 @@ void test21()		//测试深度优先搜索路径
 
 
 
+void test22()	//测试无向图
+{
+	Digraph g(6);
+	g.addEdge(0, 1);
+	g.addEdge(3, 4);
+	g.addEdge(2, 1);
+	g.addEdge(0, 2);
+	g.addEdge(2, 3);
+	g.addEdge(2, 4);
+	g.addEdge(3, 5);
+
+	g.addEdge(0, 5);
+
+
+
+}
+
+
+void test23()	//测试有向图是否有环
+{
+	Digraph g(6);
+	g.addEdge(0, 1);
+	g.addEdge(3, 4);
+	g.addEdge(2, 1);
+	g.addEdge(0, 2);
+	g.addEdge(2, 3);
+	g.addEdge(2, 4);
+	g.addEdge(3, 5);
+
+	g.addEdge(0, 5);
+	DirectedCycle dc(g);
+	cout << dc.hasCycle() << endl;
+
+}
+
+
+
 int main()
 {
-	test21();
+	test23();
 	system("pause");
 	return 0;
 }

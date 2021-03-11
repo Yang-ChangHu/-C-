@@ -42,6 +42,12 @@
     <ClCompile Include="myclass.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Digraph.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectedCycle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="arrayList.hpp">
@@ -123,6 +129,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="DepthFirstPaths.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Digraph.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectedCycle.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

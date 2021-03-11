@@ -1,3 +1,18 @@
-﻿  DSA.cpp
-E:\cpp_code\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\RedBlackTree.hpp(160): warning C4715: “RedBlackTree<int,std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::get”: 不是所有的控件路径都返回值
-  DataStructuresAndAlgorithms.vcxproj -> E:\cpp_code\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\Debug\DataStructuresAndAlgorithms.exe
+﻿  Digraph.cpp
+E:\cpp_code\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\DirectedCycle.h(10,15): error C2061: 语法错误: 标识符“Digraph”
+E:\cpp_code\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\DirectedCycle.h(13,19): error C2061: 语法错误: 标识符“Digraph”
+  DirectedCycle.cpp
+E:\cpp_code\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\DirectedCycle.h(10,15): error C2061: 语法错误: 标识符“Digraph”
+E:\cpp_code\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\DirectedCycle.h(13,19): error C2061: 语法错误: 标识符“Digraph”
+E:\cpp_code\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\DirectedCycle.cpp(10,1): error C2511: “DirectedCycle::DirectedCycle(Digraph)”:“DirectedCycle”中没有找到重载的成员函数
+E:\cpp_code\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\DirectedCycle.h(7): message : 参见“DirectedCycle”的声明
+E:\cpp_code\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\DirectedCycle.cpp(36,1): error C2511: “void DirectedCycle::dfs(Digraph,int)”:“DirectedCycle”中没有找到重载的成员函数
+E:\cpp_code\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\DirectedCycle.h(7): message : 参见“DirectedCycle”的声明
+  DSA.cpp
+E:\cpp_code\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\DirectedCycle.h(10,15): error C2061: 语法错误: 标识符“Digraph”
+E:\cpp_code\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\DirectedCycle.h(13,19): error C2061: 语法错误: 标识符“Digraph”
+E:\cpp_code\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\DSA.cpp(586,21): error C2664: “DirectedCycle::DirectedCycle(const DirectedCycle &)”: 无法将参数 1 从“Digraph”转换为“const DirectedCycle &”
+E:\cpp_code\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\DSA.cpp(586,21): message : 原因如下: 无法从“Digraph”转换为“const DirectedCycle”
+E:\cpp_code\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\DSA.cpp(586,19): message : 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+E:\cpp_code\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\DirectedCycle.h(18,1): message : 参见“DirectedCycle::DirectedCycle”的声明
+  正在生成代码...
