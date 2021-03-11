@@ -33,6 +33,15 @@
     <ClCompile Include="DepthFirstSearch.cpp">
       <Filter>头文件</Filter>
     </ClCompile>
+    <ClCompile Include="BreadFirstSearch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DepthFirstPaths.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="myclass.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="arrayList.hpp">
@@ -111,6 +120,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="BreadthFirstSearch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthFirstPaths.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

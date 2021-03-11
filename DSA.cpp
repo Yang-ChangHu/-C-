@@ -1,5 +1,7 @@
 #include<iostream>
 #include<string>
+//#include<stack>
+#include<algorithm>
 #include"arrayList.hpp"
 #include"LinearList.h"
 #include"myclass.h"
@@ -23,6 +25,9 @@
 #include<queue>
 #include"DepthFirstSearch.h"
 #include"Graph.h"
+#include"BreadthFirstSearch.h"
+#include"DepthFirstPaths.h"
+
 
 using namespace std;
 
@@ -56,7 +61,7 @@ void test01()
 {
 
 	arrayList<Person> p(12);
-	//p.ShowMessage();
+	p.ShowMessage();
 	Person p1(18, "张三");
 	Person p2(19, "李四");
 	Person p3(20, "王五");
@@ -344,7 +349,6 @@ void test09()//符号表测试
 	st.showMessage();
 }
 
-
 void test10()	//测试二叉树
 {
 	binaryTree<int, int> bt;
@@ -380,13 +384,11 @@ void test10()	//测试二叉树
 
 }
 
-
 void test11()	//测试折纸
 {
 	pageFolding pf(1);
 	pf.ShowTree(pf.root);
 }
-
 
 void test12()		//测试堆
 {
@@ -501,37 +503,57 @@ void test19()	//	测试uftree
 
 void test20()	//测试图
 {
-	Graph g(13);
+	Graph g(20);
 	g.addEdge(0, 1);
-	g.addEdge(0, 2);
-	g.addEdge(0, 5);
-	g.addEdge(0, 6);
-	g.addEdge(3, 5);
-	g.addEdge(3, 4);
-	g.addEdge(5, 4);
-	g.addEdge(6, 4);
+	g.addEdge(6, 9);
+	g.addEdge(3, 8);
+	g.addEdge(5, 11);
+	g.addEdge(2, 12);
+	g.addEdge(6,10);
+	g.addEdge(4, 8);
+	//g.addEdge(6, 4);
 
-	g.addEdge(7, 8);
+	//g.addEdge(7, 8);
 
-	g.addEdge(9, 10);
-	g.addEdge(9, 12);
-	g.addEdge(11,12);
-	g.addEdge(9, 11);
+	//g.addEdge(9, 10);
+	//g.addEdge(9, 12);
+	//g.addEdge(11,12);
+	//g.addEdge(9, 11);
 
 	//g.ShowMessage();
 
-	DepthFirstSearch Dfs(g, 0);
+	//DepthFirstSearch Dfs(g, 0);  //深度优先
+	BreadthFirstSearch Dfs(g, 9);		//广度优先
 	cout << Dfs.Count() << endl;
-	cout << Dfs.Marked(3) << endl;
 	cout << Dfs.Marked(10) << endl;
+	cout << Dfs.Marked(8) << endl;
 
+}
+
+void test21()		//测试深度优先搜索路径
+{
+	Graph g(6);
+	g.addEdge(0, 1);
+	g.addEdge(3, 4);
+	g.addEdge(2,1);
+	g.addEdge(0, 2);
+	g.addEdge(2,3);
+	g.addEdge(2,4);
+	g.addEdge(3,5);
+	
+	g.addEdge(0, 5);
+
+	//g.ShowMessage();
+	DepthFirstPaths dfp(g, 1);
+	stack<int> sk = dfp.pathRo(3);
+	sk.showMessage();
 }
 
 
 
 int main()
 {
-	test20();
+	test21();
 	system("pause");
 	return 0;
 }

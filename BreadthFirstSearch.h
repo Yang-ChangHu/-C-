@@ -14,6 +14,6 @@ private:
 
 	bool* marked;
 	int count;
-	queue<int>* waitSearch;
+	queue<int> waitSearch;
 
 };

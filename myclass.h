@@ -1,5 +1,4 @@
 #pragma once
-
 #include<iostream>
 #include<string>
 using namespace std;
@@ -14,13 +13,3 @@ public:
 	Person();
 };
 
-Person::Person(int age, string name)
-{
-	m_age = age;
-	m_name = name;
-}
-
-Person::Person()
-{
-
-}

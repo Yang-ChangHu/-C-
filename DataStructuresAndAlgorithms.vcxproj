@@ -139,9 +139,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BreadFirstSearch.cpp" />
+    <ClCompile Include="DepthFirstPaths.cpp" />
     <ClCompile Include="DepthFirstSearch.cpp" />
     <ClCompile Include="DSA.cpp" />
     <ClCompile Include="Graph.cpp" />
+    <ClCompile Include="myclass.cpp" />
     <ClCompile Include="UF.cpp" />
     <ClCompile Include="UFtree.cpp" />
     <ClCompile Include="UFtreeWeight.cpp" />
@@ -153,6 +156,7 @@
     <ClInclude Include="chain.hpp" />
     <ClInclude Include="chainNode.h" />
     <ClInclude Include="colorNode.hpp" />
+    <ClInclude Include="DepthFirstPaths.h" />
     <ClInclude Include="DepthFirstSearch.h" />
     <ClInclude Include="Graph.h" />
     <ClInclude Include="heap.hpp" />

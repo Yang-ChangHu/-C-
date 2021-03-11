@@ -24,8 +24,6 @@ void DepthFirstSearch::dfs(Graph G, int v)
 {
 	marked[v] = true;
 	int w;
-	int hh1;
-	int hh2;
 	while (!( G.Adj(v).empty()))
 	{
 		w = G.Adj(v).front();
@@ -33,9 +31,7 @@ void DepthFirstSearch::dfs(Graph G, int v)
 		{
 			dfs(G, w);
 		}
-		 //hh1 = G.adj[v].size();
 		(G.adj[v]).pop();
-		//hh2 = G.adj[v].size();
 	}
 	counts++;
 
