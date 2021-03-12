@@ -7,10 +7,11 @@ using namespace std;
 class DirectedCycle
 {
 public:
-	DirectedCycle(Digraph G);
+	DirectedCycle(class Digraph G);
+	~DirectedCycle();
 	bool hasCycle();
 private:
-	void dfs(Digraph G, int v);
+	void dfs(class Digraph G, int v);
 	
 	bool* m_marked;
 	bool m_hasCycle;

@@ -29,6 +29,8 @@
 #include"DepthFirstPaths.h"
 #include"Digraph.h"
 #include"DirectedCycle.h"
+#include"DepthFirstOrder.h"
+#include"TopoLogical.h"
 
 
 using namespace std;
@@ -573,26 +575,55 @@ void test22()	//≤‚ ‘ŒﬁœÚÕº
 
 void test23()	//≤‚ ‘”–œÚÕº «∑Ò”–ª∑
 {
-	Digraph g(6);
-	g.addEdge(0, 1);
-	g.addEdge(3, 4);
+	Digraph g(5);
+	g.addEdge(3, 0);
+	g.addEdge(1, 0);
 	g.addEdge(2, 1);
 	g.addEdge(0, 2);
-	g.addEdge(2, 3);
-	g.addEdge(2, 4);
-	g.addEdge(3, 5);
+	//g.addEdge(2, 3);
+	g.addEdge(1, 4);
+	//g.addEdge(3, 5);
 
-	g.addEdge(0, 5);
+	//g.addEdge(0, 5);
 	DirectedCycle dc(g);
 	cout << dc.hasCycle() << endl;
 
 }
 
 
+void test24()		//ºÏ≤È∂•µ„≈≈–Ú
+{
+	Digraph g(6);
+	g.addEdge(0,5);
+	g.addEdge(1,4);
+	g.addEdge(4,2);
+	g.addEdge(2,3);
+	//g.addEdge(3,4);
+	//g.addEdge(4,5);
+	//g.addEdge(3, 5);
+
+	//g.addEdge(0, 5);
+	DepthOrder dc(g);
+	dc.ReversePost().showMessage();
+
+}
+
+void test25()		//≤‚ ‘Õÿ∆À≈≈–Ú
+{
+	Digraph g(6);
+	g.addEdge(0, 5);
+	g.addEdge(1, 4);
+	g.addEdge(4, 2);
+	g.addEdge(2, 3);
+
+	TopoLogical tl(g);
+
+
+}
 
 int main()
 {
-	test23();
+	test25();
 	system("pause");
 	return 0;
 }

@@ -20,8 +20,8 @@ public:
 	}
 	~chainNode()
 	{
-		//cout << "chainNode析构函数调用" << endl;
-		delete next;
-		next = NULL;
+		cout << "chainNode析构函数调用" << endl;
+		/*delete next;
+		next = NULL;*/
 	}
 };

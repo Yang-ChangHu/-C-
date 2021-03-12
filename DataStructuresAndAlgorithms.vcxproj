@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BreadFirstSearch.cpp" />
+    <ClCompile Include="DepthFirstOrder.cpp" />
     <ClCompile Include="DepthFirstPaths.cpp" />
     <ClCompile Include="DepthFirstSearch.cpp" />
     <ClCompile Include="Digraph.cpp" />
@@ -147,6 +148,7 @@
     <ClCompile Include="DSA.cpp" />
     <ClCompile Include="Graph.cpp" />
     <ClCompile Include="myclass.cpp" />
+    <ClCompile Include="TopoLogical.cpp" />
     <ClCompile Include="UF.cpp" />
     <ClCompile Include="UFtree.cpp" />
     <ClCompile Include="UFtreeWeight.cpp" />
@@ -158,6 +160,7 @@
     <ClInclude Include="chain.hpp" />
     <ClInclude Include="chainNode.h" />
     <ClInclude Include="colorNode.hpp" />
+    <ClInclude Include="DepthFirstOrder.h" />
     <ClInclude Include="DepthFirstPaths.h" />
     <ClInclude Include="DepthFirstSearch.h" />
     <ClInclude Include="Digraph.h" />
@@ -176,6 +179,7 @@
     <ClInclude Include="stack.hpp" />
     <ClInclude Include="symbolchainNode.h" />
     <ClInclude Include="symbolTable.hpp" />
+    <ClInclude Include="TopoLogical.h" />
     <ClInclude Include="TowWayLinkList.hpp" />
     <ClInclude Include="treeNode.h" />
     <ClInclude Include="UF.h" />

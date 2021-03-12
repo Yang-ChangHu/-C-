@@ -12,6 +12,7 @@ class Queue
 {
 public:
 	Queue();
+	~Queue();
 	Queue(const Queue& q);
 	bool isEmpty() const;
 	int size() const;
@@ -40,6 +41,13 @@ template<class T>
 T Queue<T>::dequeue()
 {
 
+	if (this->N == 1)
+	{
+		T headElement = this->head->element;
+		this->head = NULL;
+		this->N = 0;
+		return headElement;
+	}
 	chainNode<T>* curNode = this->head;
 	T tmp=(this->head->element);
 	this->head = this->head->next;
@@ -102,7 +110,28 @@ void Queue<T>::showMessage() const
 template<class T>
 Queue<T>::Queue(const Queue& q)
 {
+	if (q.N == 0)
+	{
+		head = NULL;
+		last = NULL;
+		N = 0;
+	}
+	else
+	{
 	head = new chainNode<T>(*(q.head));
 	last = new chainNode<T>(*(q.last));
 	N = q.N;
+	}
+
+}
+
+
+template<class T>
+Queue<T>::~Queue()
+{
+	//delete head;
+	//delete last;
+	//this->head = NULL;
+	//this->last = NULL;
+	cout << "Queue析构函数调用" << endl;
 }

@@ -48,13 +48,21 @@ Digraph Digraph::reverse()
 
 Digraph::~Digraph()
 {
-	delete this->adj;
-	adj = NULL;
+	//delete this->adj;
+	//adj = NULL;
 }
 
 Digraph::Digraph()
 {
-	this->v = 0;
-	this->adj = NULL;
+	this->v = 0; 
 	this->e = 0;
+	this->adj = NULL;
 }
+
+//Digraph::Digraph(const Digraph& g)
+//{
+//	this->v = g.v;
+//	this->e =g.e;
+//	this->adj = new Queue<int>(*(g.adj));
+//}
+

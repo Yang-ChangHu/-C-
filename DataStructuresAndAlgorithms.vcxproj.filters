@@ -48,6 +48,12 @@
     <ClCompile Include="DirectedCycle.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="DepthFirstOrder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TopoLogical.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="arrayList.hpp">
@@ -135,6 +141,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="DirectedCycle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthFirstOrder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TopoLogical.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
