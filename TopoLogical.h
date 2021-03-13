@@ -12,7 +12,7 @@ class TopoLogical
 public:
 	bool isCycle();
 	stack<int> Order();
-	TopoLogical(class Digraph G);
+	TopoLogical(const class Digraph& G);
 
 private:
 	stack<int> order;

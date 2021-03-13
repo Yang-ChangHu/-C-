@@ -8,16 +8,15 @@ stack<int> TopoLogical::Order()
 {
 	return this->order;
 }
-TopoLogical::TopoLogical(class Digraph G)
+TopoLogical::TopoLogical(const class Digraph& G)
 {
-	Digraph nG=G;
-	DirectedCycle dc(nG);
+	DirectedCycle dc(G);
+
 	if (!dc.hasCycle())
 	{
 		DepthOrder DO(G);
 		DO.ReversePost().showMessage();
-		/*this->order=DO.ReversePost();
-		order.showMessage();*/
+
 	}
 	else
 	{

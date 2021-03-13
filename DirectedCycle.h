@@ -9,11 +9,11 @@ class DirectedCycle
 public:
 	DirectedCycle(class Digraph G);
 	~DirectedCycle();
-	bool hasCycle();
+	bool hasCycle() const;
 private:
-	void dfs(class Digraph G, int v);
+	void dfs(class Digraph G, int v) const;
 	
 	bool* m_marked;
-	bool m_hasCycle;
+	mutable bool m_hasCycle;
 	bool* m_onStack;
 };

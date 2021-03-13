@@ -12,7 +12,7 @@ Digraph::Digraph(int v)
 
 	this->e = 0;
 }
-int Digraph::V()
+int Digraph::V() const
 {
 	return this->v;
 }
@@ -61,8 +61,9 @@ Digraph::Digraph()
 
 //Digraph::Digraph(const Digraph& g)
 //{
+//	cout << "Digraph拷贝构造函数调用" << endl;
 //	this->v = g.v;
 //	this->e =g.e;
-//	this->adj = new Queue<int>(*(g.adj));
+//	this->adj = new Queue<int>(*g.adj);
 //}
 

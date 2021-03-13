@@ -11,7 +11,10 @@ public:
 	T element;
 	chainNode<T>* next;
 
-	chainNode() {}
+	chainNode()
+	{
+
+	}
 
 	chainNode(T element ,chainNode<T>* next)
 	{

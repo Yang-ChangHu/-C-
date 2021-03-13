@@ -17,6 +17,7 @@
 #include"heap.hpp"
 #include"MaxPriorityQueue.hpp"
 #include"minPriorityQueue.hpp"
+#include"indexMinPriorityQueue.hpp"
 #include"colorNode.hpp"
 #include"RedBlackTree.hpp"
 #include"UF.h"
@@ -31,6 +32,8 @@
 #include"DirectedCycle.h"
 #include"DepthFirstOrder.h"
 #include"TopoLogical.h"
+#include"Edge.h"
+#include"EdgeWeightGraph.h"
 
 
 using namespace std;
@@ -594,10 +597,12 @@ void test23()	//测试有向图是否有环
 void test24()		//检查顶点排序
 {
 	Digraph g(6);
-	g.addEdge(0,5);
-	g.addEdge(1,4);
-	g.addEdge(4,2);
-	g.addEdge(2,3);
+	g.addEdge(0, 5);
+	g.addEdge(1, 4);
+	g.addEdge(4, 2);
+	g.addEdge(2, 3);
+	g.addEdge(5, 1);
+	g.addEdge(0, 3);
 	//g.addEdge(3,4);
 	//g.addEdge(4,5);
 	//g.addEdge(3, 5);
@@ -615,15 +620,76 @@ void test25()		//测试拓扑排序
 	g.addEdge(1, 4);
 	g.addEdge(4, 2);
 	g.addEdge(2, 3);
-
+	g.addEdge(5, 1);
+	g.addEdge(0,3);
 	TopoLogical tl(g);
 
 
 }
 
+
+void test26()		//测试加权无向图
+{
+	EdgeWeightGraph ewg(6);
+
+	Edge e1(0, 1, 1);
+	Edge e2(1,2, 1);
+	Edge e3(2,3, 1);
+	Edge e4(3,4, 1);
+	Edge e5(4,5, 1);
+	Edge e6(5,2, 4);
+	Edge e7(3, 1, 2);
+	ewg.addEdge(e1);
+	ewg.addEdge(e2);
+	ewg.addEdge(e3);
+	ewg.addEdge(e4);
+	ewg.addEdge(e5);
+	ewg.addEdge(e6);
+	ewg.addEdge(e7);
+
+
+	cout << "\t顶点个数：" << ewg.V() << "\t线个数：" << ewg.E() << endl;
+	for (int i = 0; i < 6; i++)
+	{
+		Queue<Edge> tmp = ewg.Adj(i);
+		while (!tmp.isEmpty())
+		{
+			if (tmp.head->element.Other(i) > i)
+			{
+				Edge etmp = tmp.dequeue();
+				cout << "\t从 " << etmp.Other(i) << "\t到" << i << "\t权重是 " << etmp.Weight() << endl;
+			}
+			else
+			{
+				Edge etmp=tmp.dequeue();
+			}
+		}
+
+	}
+
+
+}
+
+void test27()		//测试索引最小优先队列
+{
+	IndexMinPriorityQueue<char> impq(10);
+	impq.insect(0, 'A');
+	impq.insect(1, 'C');
+	impq.insect(2, 'F');
+
+
+	impq.changeItem(2, 'B');
+
+	while (!impq.isEmpty())
+	{
+		cout << impq.delMin() << endl;
+	}
+
+}
+
 int main()
 {
-	test25();
+	test27();
 	system("pause");
 	return 0;
 }

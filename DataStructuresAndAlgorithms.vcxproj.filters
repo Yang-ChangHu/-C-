@@ -54,6 +54,15 @@
     <ClCompile Include="TopoLogical.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Edge.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EdgeWeightGraph.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="primMST.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="arrayList.hpp">
@@ -147,6 +156,15 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="TopoLogical.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Edge.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EdgeWeightGraph.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="primMST.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

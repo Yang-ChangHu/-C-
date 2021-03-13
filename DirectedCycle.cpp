@@ -27,20 +27,21 @@ DirectedCycle::DirectedCycle( class Digraph G)
 	}
 }
 
-bool DirectedCycle::hasCycle()
+bool DirectedCycle::hasCycle() const
 {
 	return this->m_hasCycle;
 	
 }
 
-void DirectedCycle::dfs(class Digraph G, int v)
+void DirectedCycle::dfs(class Digraph G, int v) const
 {
 	m_marked[v] = true;
 	m_onStack[v] = true;
+	Queue<int> adjtmp = G.adj[v];
 	//Queue<int> q_tmp = G.adj[v];
-	while (!G.adj[v].isEmpty())
+	while (!adjtmp.isEmpty())
 	{
-		int w = G.adj[v].dequeue();
+		int w = adjtmp.dequeue();
 		if (m_marked[w] == false)
 		{
 			dfs(G, w);

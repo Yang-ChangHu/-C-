@@ -110,6 +110,7 @@ void Queue<T>::showMessage() const
 template<class T>
 Queue<T>::Queue(const Queue& q)
 {
+	cout << "Queue拷贝构造函数调用" << endl;
 	if (q.N == 0)
 	{
 		head = NULL;
@@ -129,9 +130,9 @@ Queue<T>::Queue(const Queue& q)
 template<class T>
 Queue<T>::~Queue()
 {
-	//delete head;
-	//delete last;
-	//this->head = NULL;
-	//this->last = NULL;
+	delete head;
+	delete last;
+	this->head = NULL;
+	this->last = NULL;
 	cout << "Queue析构函数调用" << endl;
 }

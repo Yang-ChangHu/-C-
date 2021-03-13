@@ -17,7 +17,7 @@ public:
 	Digraph();
 	//Digraph(const Digraph& g);
 	~Digraph();
-	int V();
+	int V() const;
 	int E();
 	void addEdge(int v, int w);
 	Queue<int> Adj(int v);

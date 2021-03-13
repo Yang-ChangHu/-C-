@@ -146,8 +146,11 @@
     <ClCompile Include="Digraph.cpp" />
     <ClCompile Include="DirectedCycle.cpp" />
     <ClCompile Include="DSA.cpp" />
+    <ClCompile Include="Edge.cpp" />
+    <ClCompile Include="EdgeWeightGraph.cpp" />
     <ClCompile Include="Graph.cpp" />
     <ClCompile Include="myclass.cpp" />
+    <ClCompile Include="primMST.cpp" />
     <ClCompile Include="TopoLogical.cpp" />
     <ClCompile Include="UF.cpp" />
     <ClCompile Include="UFtree.cpp" />
@@ -165,6 +168,8 @@
     <ClInclude Include="DepthFirstSearch.h" />
     <ClInclude Include="Digraph.h" />
     <ClInclude Include="DirectedCycle.h" />
+    <ClInclude Include="Edge.h" />
+    <ClInclude Include="EdgeWeightGraph.h" />
     <ClInclude Include="Graph.h" />
     <ClInclude Include="heap.hpp" />
     <ClInclude Include="indexMinPriorityQueue.hpp" />
@@ -174,6 +179,7 @@
     <ClInclude Include="myclass.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="pageFolding.hpp" />
+    <ClInclude Include="primMST.h" />
     <ClInclude Include="queue.hpp" />
     <ClInclude Include="RedBlackTree.hpp" />
     <ClInclude Include="stack.hpp" />
